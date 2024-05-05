@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Old Moscow";
+    src: url("../fonts/old-moscow.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BrokgauzEfron";
+    src: url("../fonts/BrokgauzEfron.ttf") format("truetype");
+    font-weight: normal;
+}

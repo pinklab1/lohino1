@@ -1,0 +1,294 @@
+@font-face {
+  font-family: "Old Moscow";
+  src: url("../fonts/old-moscow.otf") format("opentype");
+  font-weight: normal;
+}
+
+body {
+	font: 12px/18px Verdana, sans-serif;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+img {
+	border: none;
+}
+article,aside,figcaption,figure,footer,header,hgroup,nav,section,time {
+ display: block;
+}
+figure{
+padding:10px 0px;
+}
+.content{
+    min-width: 1200px;
+	background-color: #fff;
+    margin: 60px 40px;
+	padding: 20px;
+}
+
+	h1
+	{
+		font-family: "Old Moscow";
+		font-size: 52px;
+		line-height: 52px;
+		padding: 0px 0px 20px 0px;
+	}
+
+.title-box
+{
+border-bottom: 1px solid #000;
+width: 100%;
+}
+
+	.main-title
+	{
+		float: left; 
+		padding: 20px 30px 0px 25px;
+		width: 650px;
+	}
+
+	.main-title h2
+	{
+		font-family: "Old Moscow";
+		font-size: 26px;
+		line-height: 34px;
+		display: inline-block;
+		word-spacing: 4px;
+		padding: 0px 10px 0px 0px;
+		letter-spacing: 2px;
+	}
+
+textauthor
+{
+	display: block;
+    float: right;
+    text-align: left;
+    font-size: 14px;
+    width: 450px;
+    line-height: 20px;
+    padding: 20px 0px 20px 20px;
+    font-style: italic;
+}
+
+.main_page{
+    width: 700px;
+    float: left;
+    padding: 0px 40px 80px 20px;
+    margin: 15px 0px 0px 0px;
+	background-color: #f9f5e4;
+}
+.left_menu{
+
+    width: 200px;
+    float: left;
+    color: #fff;
+    padding: 25px 0px 30px 0px;
+    line-height: 30px;
+}
+.left_menu ul li{
+    list-style-type: none;
+    padding: 10px 0px 10px 15px;
+	line-height: 15px;
+}
+.left_menu a{
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.left_menu a span{
+   border-bottom: 1px solid #000;
+   line-height: 20px;
+}
+.left_menu a span:hover{
+   border-bottom: 1px solid #009933;
+   color: #009933;
+}
+
+	.clear{
+		clear: both;
+	}
+	
+	clear
+	{
+		clear: both;
+	}
+
+.text{
+    font-size: 14px;
+    line-height: 24px; 
+    text-align:left;	
+	padding: 20px 0px 10px 0px;
+}
+.main_page a{
+    color: #000;
+    text-decoration: none;
+}
+.main_page a:hover{
+    text-decoration: underline;
+}
+
+.right-box
+{
+	float: left; 
+	width: 300px; 
+	padding: 40px 0px 0px 0px; 
+	text-align: left; 
+	margin: 0px 0px 0px 70px;
+}
+
+.footer{
+   
+}
+.copy{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    color: #555;
+    font-size: 14px;
+}
+.map{
+	padding: 20px 0px 0px 0px;
+}
+.line{
+	border-top: 1px solid #666;
+	width: 633px;
+	padding: 10px 0px;
+}
+.surname_sitizens{
+padding: 10px 0px 0px 0px;
+}
+.main_page .familii a{
+text-decoration: underline;
+}
+.familii{
+padding: 15px 0px 0px 5px; 
+}
+.linkname a{
+text-decoration: underline;
+}
+.link_news a{
+    color: #0000FF;
+text-decoration: underline;
+}
+
+/*******************/
+
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+}
+
+.sticky:before,
+.sticky:after {
+    content: '';
+    display: table;
+}
+
+#btnup {
+  bottom: 50px;
+  cursor: pointer;
+  display: none;
+  font-size: 14px;
+  position: fixed;
+  right: 50px;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.date-news{
+	font-size: 12px;
+	font-weight: 100;
+}
+
+metricbooksbox{
+	padding:28px 0px 0px 0px;
+	font-size:14px;
+}
+
+metricbooksbox .tab{
+	margin-bottom: 30px;
+}
+
+
+/*for archive.html*/
+met1{
+	display: block;
+    float: left;
+    height: 300px;
+    margin: 0 30px 40px 0;
+    width: 30%;
+	overflow: hidden;
+}
+met1 .pseudo_link{
+	border-bottom: none;
+}
+
+/*for photogallery.html*/
+pho1{
+	display: block;
+    float: left;
+    height: 300px;
+    margin: 0 30px 40px 0;
+    width: 30%;
+	overflow: hidden;
+}
+
+/*for films.html*/ 
+
+film1{
+	display: block;
+	margin: 0px 0px 15px 0px;
+	height: 350px;
+}
+film1 iframe{
+	display: block;
+    float: left;
+    width: 60%;
+	
+}
+
+infofilms{
+	display: block;
+    float: left;
+    font-size: 16px;
+	line-height: 22px;
+    /*left: 20px;
+    position: relative;
+    top: 25px;*/
+    width: 35%;
+	margin: 20px 0px 0px 20px;
+}
+
+
+/***************************************/
+/*for news*/
+
+newsbox
+{
+	display: block;
+	position: relative;
+}
+
+noticebox
+{
+	display: block;
+    left: 830px;
+    position: absolute;
+    top: 80px;
+    width: 205px;
+}
+
+
+/*for sheets*/
+
+.sheets label
+{
+	cursor: pointer!important;
+}
