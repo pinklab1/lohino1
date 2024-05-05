@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>деревня Лохино</title>
+
+	
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" media="screen, projection" />
+	<link rel="stylesheet" type="text/css" href="css/style22.css" media="screen, projection" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+	<script type="text/javascript" src="highslide/highslide.js"></script>
+	<script type="text/javascript">
+		hs.graphicsDir = 'highslide/graphics/';
+		hs.wrapperClassName = 'wide-border';
+	</script>
+
+	<script src="js/stickyfill.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/expromptum.css" media="screen, projection" />
+	<script type="text/javascript" src="js/expromptum.min.js"></script>
+
+	<!--[if lt IE 9]> 
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+		<![endif]-->
+
+	<style>
+		
+	</style>
+
+</head>
+
+<body link="blue" vlink="black" alink="red">
+
+	<div class="content">
+
+		<header class="header">
+			<div class="header__title-box">
+				<img class="header__logo" src="images/logonew-site-lohino-00.png" alt="logo" />
+				<div class="header__main-title">
+					<h1>Деревня Лохино</h1>
+					<h2>
+						<span>Московская губерния</span>
+						<span>Звенигородский уезд</span>
+						<span>Павловская волость</span>
+					</h2>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+
+		<main class="mainbox">
+			<div class="mainbox__item mainbox__item--left left_menu">
+				<ul class="mainbox__list sticky">
+					<li><a href="index.html"><span>Главная</span></a></li>
+					<li><a href="about.html"><span>О проекте</span></a></li>
+					<li><span style="color: #009933;font-size: 14px;vertical-align: middle;">Заметки</span></li>
+					<li><a href="sitizens.html"><span>Жители</span></a></li>
+					<li><a href="habitat.html"><span>Краеведение</span></a></li>
+					<li style="line-height: 15px;"><a href="vov.html"><span>Великая Отечественная&nbsp;война</span></a></li>
+					<li><a href="memoirs.html"><span>Воспоминания</span></a></li>
+					<li><a href="photogallery.html"><span>Фотографии</span></a></li>
+					<li><a href="films.html"><span>Фильмы</span></a></li>
+					<li><a href="archive.html"><span>Архивные документы</span></a></li>
+					<li><a href="metricbook.html"><span>Метрические книги</span></a></li>
+					<li><a href="contacts.html"><span>Контакты</span></a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+
+			
+
+            <div class="main_page mainbox__item mainbox__item--right" style="position: relative;">
+                <p class="text">
+                    1. 1618 — основание деревни
+                    <br><br>
+                    2. 1626 — Писцовая книга Вяземского стана. Сведения о жителях деревни: 2 двора.
+                    <br><br>
+                    3. 1646 — Писцовая книга Вяземского стана. В деревне 6 дворов. 
+                    <br><br>
+                    4. 1678 — Писцовая книга…
+                </p>
+            </div>
+
+		</main>
+
+		<footer>
+			<div class="footer">
+				<div class="copy">© 2010–<script type="text/javascript">
+					document.write(new Date().getFullYear());
+				   </script> Лохино</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+
+	</div>
+
+	<div id="btnup">Наверх</div>
+
+	<script>
+		var stickyElements = document.getElementsByClassName('sticky');
+
+		for (var i = stickyElements.length - 1; i >= 0; i--) {
+			Stickyfill.add(stickyElements[i]);
+		}
+	</script>
+
+	<script type="text/javascript">
+		var top_show = 150; // В каком положении полосы прокрутки начинать показ кнопки "Наверх"
+		var delay = 1000; // Задержка прокрутки
+		$(document).ready(function () {
+			$(window).scroll(function () { // При прокрутке попадаем в эту функцию
+				/* В зависимости от положения полосы прокрукти и значения top_show, скрываем или открываем кнопку "Наверх" */
+				if ($(this).scrollTop() > top_show) $('#btnup').fadeIn();
+				else $('#btnup').fadeOut();
+			});
+			$('#btnup').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
+				/* Плавная прокрутка наверх */
+				$('body, html').animate({
+					scrollTop: 0
+				}, delay);
+			});
+		});
+	</script>
+
+	<script>
+		expromptum();
+	</script>
+
+	<script>
+		$("#lab-1").click(function () {
+			$("#rb-1").show();
+		});
+		$("#lab-2").click(function () {
+			$("#rb-1").hide("slow");
+		});
+		$("#lab-3").click(function () {
+			$("#rb-1").hide("slow");
+		});
+	</script>
+
+
+
+
+	<!-- Yandex.Metrika informer -->
+	<a href="https://metrika.yandex.ru/stat/?id=14108293&amp;from=informer" target="_blank" rel="nofollow"><img
+			src="//bs.yandex.ru/informer/14108293/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+			style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика"
+			title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" onclick="try {
+                                                        Ya.Metrika.informer({i: this, id: 14108293, lang: 'ru'});
+                                                        return false
+                                                    } catch (e) {
+                                                    }" /></a>
+	<!-- /Yandex.Metrika informer -->
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function () {
+				try {
+					w.yaCounter14108293 = new Ya.Metrika({
+						id: 14108293,
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true
+					});
+				} catch (e) {}
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () {
+					n.parentNode.insertBefore(s, n);
+				};
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else {
+				f();
+			}
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript>
+		<div><img src="//mc.yandex.ru/watch/14108293" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+
+</body>
+
+</html>
