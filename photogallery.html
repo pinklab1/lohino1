@@ -9,11 +9,11 @@
         <link rel="stylesheet" type="text/css" href="css/style22.css" media="screen, projection" />
         <link rel="stylesheet" type="text/css" href="css/expromptum.css" media="screen, projection" />
 		<link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+		<link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
 
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         
         <script type="text/javascript" src="js/expromptum.min.js"></script> 
-        <script type="text/javascript" src="highslide/highslide.js"></script>
 		
 		<script src="js/stickyfill.js"></script>
 
@@ -21,6 +21,20 @@
             hs.graphicsDir = 'highslide/graphics/';
             hs.wrapperClassName = 'wide-border';
         </script>
+
+	<script type="module">
+
+		import PhotoSwipeLightbox from './photoswipe/dist/photoswipe-lightbox.esm.js';
+
+		const lightbox = new PhotoSwipeLightbox({
+  		gallery: '#my-gallery',
+  		children: 'a',
+  		pswpModule: () => import('https://unpkg.com/photoswipe'),
+	});
+
+	lightbox.init();
+
+	</script>
 		
 		<!--[if lt IE 9]> 
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
@@ -60,7 +74,7 @@
                 <div class="clear"></div>
         </div>
 			
-            <div class="main_page" style="width: 77%; padding-top: 25px;">
+            <div class="main_page" style="width: 77%; padding-top: 25px;" id="my-gallery">
 				
 				<pho1>
 					<figure style="">
