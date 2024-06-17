@@ -1,0 +1,29 @@
+.pswp__item {
+	display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+	overflow: hidden;
+}
+
+.pswp img {
+    height: auto !important;
+    max-width: max-content !important;
+    max-height: 1300px;
+    position: relative;
+}
+
+.pswp__zoom-wrap {
+    display: flex !important;
+    justify-content: center !important;
+    position: unset;
+	top: unset;
+	left: unset;
+	width: unset;
+	height: unset;
+  }
+
+  .pswp__img {
+	width: auto;
+	height: auto;
+}
